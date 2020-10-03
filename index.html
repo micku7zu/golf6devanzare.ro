@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Golf 6 1.6 TDI 2011 Cluj-Napoca</title>
+
+
+    <link rel="icon" sizes="32x32" href="favicon.png">
+    <meta property="og:image" content="https://golf6devanzare.ro/images/front_photo.jpg">
+
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
+          integrity="sha256-DBYdrj7BxKM3slMeqBVWX2otx7x4eqoHRJCsSDJ0Nxw=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- JS libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"
+            integrity="sha256-4sETKhh3aSyi6NRiA+qunPaTawqSMDQca/xLWu27Hg4=" crossorigin="anonymous"></script>
+
+    <!-- JS files -->
+    <script src="scripts/sweetalert.min.js"></script>
+    <script src="scripts/imagesloaded.min.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/rotate.js"></script>
+    <script src="scripts/three_dimensional.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/lazy_load.js"></script>
+    <script src="scripts/live_mileage.js"></script>
+    <script src="scripts/fixed_table.js"></script>
+    <script src="scripts/app.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="center">
+        <span class="header-logo"> Golf 6</span>
+        <div id="top-menu">
+            <div class="menu-list">
+                <a href="#first-section" class="selected">Home</a>
+                <a href="#three-dimensional">Vizualizare 360&#176;</a>
+                <a href="#style-packet">Dotări</a>
+                <a href="#history">Istoric</a>
+                <a href="#current_state">Stare actuală</a>
+                <a href="#price">Preț</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="#" title="Deschide meniul" class="toggle-menu"></a>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</header>
+
+<section id="first-section">
+    <div class="center">
+        <div class="cover">
+            <div class="shape"></div>
+            <h1>
+                <span>Golf VI</span>
+                <span>1.6 TDI</span>
+                <span>2011</span>
+            </h1>
+            <div class="cover-container">
+                <img alt="cover" src="images/cover/1.jpg"/>
+                <img alt="cover" src="images/cover/2.jpg"/>
+                <img alt="cover" src="images/cover/3.jpg"/>
+            </div>
+        </div>
+    </div>
+
+    <a id="scroll-down" href="#three-dimensional">
+        Scroll down <span>&#187;</span>
+    </a>
+</section>
+
+<section id="three-dimensional">
+    <div class="loading-overlay">
+        <div class="spinner-container">
+            <span>0%</span>
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <a href="#" id="load-three-dimensional"><img alt="360" src="images/360.svg"/>Vizualizare</a>
+</section>
+
+<section id="style-packet">
+    <div class="center">
+        <h1>Pachet Style</h1>
+    </div>
+    <div class="horizontal-images">
+        <img src="images/features/style_geamuri.jpg" alt="Style geamuri"/>
+        <img src="images/features/style_jenti.jpg" alt="Style jenti"/>
+        <img src="images/features/style_oglinzi.jpg" alt="Style oglinzi"/>
+        <img src="images/features/style_pedale.jpg" alt="Style pedale"/>
+    </div>
+</section>
+
+<section id="seats">
+    <div class="center">
+        <h1>
+            Scaune <br>
+            încălzite <br>
+            <img style="margin-top:25px;" alt="Scaune încălzite" src="images/features/scaune_incalzite.jpg"/>
+        </h1>
+        <img src="images/features/scaune_alcantara.jpg" alt="Scaune" id="scaune-fata"/>
+        <div class="clear"></div>
+    </div>
+</section>
+
+<section id="headlights">
+    <div class="center">
+        <div class="text">
+            <h1>Faruri automate</h1>
+            <ul>
+                <li>se aprind și se sting automat</li>
+                <li>luminează în viraj (cornering lights)</li>
+                <li>schimbă faza scurtă și lungă automat, în functie de trafic</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="vertical-images">
+        <img src="images/features/faruri_1.jpg" alt="Cameră faruri automate"/>
+        <img src="images/features/faruri_2.jpg" alt="Faruri automate"/>
+        <img src="images/features/faruri_3.jpg" alt="Faruri automate"/>
+    </div>
+</section>
+
+<section id="parking_sensors">
+    <h1>Senzori de parcare față-spate</h1>
+    <img src="images/features/senzori_parcare.png" alt="Senzori parcare"/>
+</section>
+
+<section id="media_navigation">
+    <div class="center">
+        <div class="table-wrapper">
+
+            <h1>Unitate media <span>cu App-Connect și Bluetooth</span></h1>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img data-src="images/features/media_preview.jpg" class="swiper-lazy">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="images/features/media_radio.jpg" class="swiper-lazy">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="images/features/media_sources.jpg" class="swiper-lazy">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="images/features/media_bluetooth.jpg" class="swiper-lazy">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="images/features/media_settings.jpg" class="swiper-lazy">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="images/features/media_balance.jpg" class="swiper-lazy">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="images/features/media_appconnect.jpg" class="swiper-lazy">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="images/features/media_androidauto.jpg" class="swiper-lazy">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="images/features/media_googlemaps.jpg" class="swiper-lazy">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="images/features/media_senzori_parcare.jpg" class="swiper-lazy">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <!-- Navigation -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="others">
+    <div class="center">
+        <h1>Alte dotări</h1>
+        <div class="boxes" id="features">
+            <div class="box wheel">
+                <img alt="Volan multifuncțional" src="images/features/volan_multifunctional.jpg">
+                <span>Volan multifuncțional</span>
+            </div>
+            <div class="box">
+                <img alt="Pilot automat" src="images/features/pilot_automat.jpg">
+                <span>Pilot automat</span>
+            </div>
+            <div class="box">
+                <img alt="Stergătoare automate" src="images/features/stergatoare_automate.jpg">
+                <span>Stergătoare automate</span>
+            </div>
+            <div class="box">
+                <img alt="Torpedou refrigerant" src="images/features/torpedou_frigorific.jpg">
+                <span>Torpedou refrigerant</span>
+            </div>
+            <div class="box mirrors">
+                <img alt="Oglinzi încălzite" src="images/features/oglinzi_incalzite.jpg">
+                <img alt="Oglinzi style" src="images/features/oglinzi_style.jpg">
+                <span>Oglinzi încălzite</span>
+            </div>
+            <div class="box">
+                <img alt="Geamuri electrice" src="images/features/geamuri_electrice.jpg">
+                <span>Geamuri electrice față-spate</span>
+            </div>
+            <div class="box">
+                <img alt="Dublu climatronic" src="images/features/dublu_climatronic.jpg">
+                <span>Dublu climatronic</span>
+            </div>
+            <div class="box">
+                <img alt="Roată de rezervă" src="images/features/roata_rezerva.jpg">
+                <span>Roată de rezervă</span>
+            </div>
+            <div class="box">
+                <img alt="Banchetă rabatabilă" src="images/features/bancheta_rabatabila.jpg">
+                <span>Banchetă rabatabilă pe 2 zone</span>
+            </div>
+            <div class="box">
+                <img alt="Cotieră față-spate" src="images/features/cotiere.jpg">
+                <span>Cotieră față-spate</span>
+            </div>
+            <div class="box">
+                <img alt="Oglindă antiorbire" src="images/features/oglinda_antiorbire.jpg">
+                <span>Oglindă antiorbire</span>
+            </div>
+            <div class="box">
+                <img alt="Spălare faruri automată" src="images/features/spalatoare_faruri.jpg">
+                <span>Spălare faruri automată</span>
+            </div>
+            <a href="https://www.rompetrol.ro/personal/fill-go/fill-go-credit" title="Card Rompetrol Fill&Go"
+               target="_blank" class="box rompetrol">
+                <img alt="Rompetrol Fill&Go" src="images/features/card_rompetrol.png">
+                <span>Card Fill&Go prealimentat</span>
+            </a>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <br><br><br>
+</section>
+<section id="history">
+    <div class="center">
+        <h1>Istoric</h1>
+    </div>
+    <div class=entries>
+        <div class=entry>
+            <div class=point>0<span> KM</span></div>
+            <div class=title><span>29 August</span> 2011</div>
+            <div class=body><p><img alt="Wolfsburg Germany" src=images/history/Wolfsburg.png><br>Prima înmatriculare,
+                Germania</div>
+        </div>
+        <div class=entry>
+            <div class=point>30<span>.300 KM</span></div>
+            <div class=title>2012 <span>Noiembrie 15</span></div>
+            <div class="title title-mobile"><span>15 Noiembrie</span> 2012</div>
+            <div class=body><p>Prima revizie, Germania:<br>- ulei<br>- filtru aer<br>- filtru polen<br>- filtru ulei<br>
+            </div>
+        </div>
+        <div class=entry>
+            <div class=point>58<span>.750 KM</span></div>
+            <div class=title><span>28 August</span> 2013</div>
+            <div class=body><p>A doua revizie, Germania:<br>- ulei<br>- filtru aer<br>- filtru polen<br>- filtru
+                ulei<br></div>
+        </div>
+        <div class=entry>
+            <div class=point>88<span>.100 KM</span></div>
+            <div class=title>2014 <span>Mai 19</span></div>
+            <div class="title title-mobile"><span>19 Mai</span> 2014</div>
+            <div class=body><p>A treia revizie, Germania:<br>- ulei<br>- filtru ulei<br></div>
+        </div>
+        <div class=entry>
+            <div class=point>96<span>.750 KM</span></div>
+            <div class=title><span>12 August</span> 2014</div>
+            <div class=body><p>A patra revizie, Germania:<br>- ulei<br>- filtru motorină<br>- lichid de frână<br>-
+                filtru aer</div>
+        </div>
+        <div class=entry>
+            <div class=point>114<span>.200 KM</span></div>
+            <div class=title>2015 <span>Februarie 26</span></div>
+            <div class="title title-mobile"><span>26 Februarie</span> 2015</div>
+            <div class=body><p>- ulei<br>- filtru aer<br>- filtru polen<br>- filtru ulei<br><br><img alt="Arad, România"
+                                                                                                     src=images/history/arad.png><br>Primul
+                proprietar în Romania, Arad.</div>
+        </div>
+        <div class=entry>
+            <div class=point>130<span>.250 KM</span></div>
+            <div class=title><span>06 Aprilie</span> 2016</div>
+            <div class=body><p>Prima revizie în România:<br>- ulei<br>- filtru motorină<br>- filtru aer<br>- filtru
+                polen<br>- filtru ulei<br><br></div>
+        </div>
+        <div class=entry>
+            <div class=point>137<span>.000 KM</span></div>
+            <div class=title>2016 <span>Decembrie 01</span></div>
+            <div class="title title-mobile"><span>01 Decembrie</span> 2016</div>
+            <div class=body><p><img alt="Cluj-Napoca, România" src=images/history/cluj.png><br>
+                Al doilea proprietar în România, Cluj-Napoca.
+                <br>
+                Preț în anunț: 9950 euro <br>
+                Preț cumpărare: 9500 euro <br>
+            </div>
+        </div>
+        <div class=entry>
+            <div class=point>141<span>.500 KM</span></div>
+            <div class=title><span>15 Martie</span> 2017</div>
+            <div class=body><p>- distribuție<br>- pompă apă</div>
+        </div>
+        <div class=entry>
+            <div class=point>143<span>.600 KM</span></div>
+            <div class=title>2017 <span>Aprilie 22</span></div>
+            <div class="title title-mobile"><span>22 Aprilie</span> 2017</div>
+            <div class=body><p>- ulei<br>- filtru motorină<br>- filtru aer<br>- filtru polen<br>- filtru ulei<br></div>
+        </div>
+        <div class=entry>
+            <div class=point>146<span>.500 KM</span></div>
+            <div class=title><span>27 Mai</span> 2017</div>
+            <div class=body><p><img alt="Stage 1" src=images/features/stage1.png><br>Stage 1:<br>- de la 105cp la 140cp
+                (+35cp)<br>- de la 250Nm la 320Nm (+70Nm)<br></div>
+        </div>
+        <div class=entry>
+            <div class=point>158<span>.100 KM</span></div>
+            <div class=title>2018 <span>Februarie 03</span></div>
+            <div class="title title-mobile"><span>03 Februarie</span> 2018</div>
+            <div class=body><p>- ulei<br>- filtru motorină<br>- filtru aer<br>- filtru polen<br>- filtru ulei<br></div>
+        </div>
+        <div class=entry>
+            <div class=point>168<span>.200 KM</span></div>
+            <div class=title><span>03 Noiembrie</span> 2018</div>
+            <div class=body><p>- telescop față</div>
+        </div>
+        <div class=entry>
+            <div class=point>171<span>.600 KM</span></div>
+            <div class=title>2019 <span>Februarie 09</span></div>
+            <div class="title title-mobile"><span>09 Februarie</span> 2019</div>
+            <div class=body><p>- ulei<br>- filtru motorină<br>- filtru aer<br>- filtru polen<br>- filtru ulei<br></div>
+        </div>
+        <div class=entry>
+            <div class=point>175<span>.400 KM</span></div>
+            <div class=title><span>08 Iunie</span> 2019</div>
+            <div class=body><p>- răcitor ulei (termoflot)<br>- furtun apă (1K0122109CF)<br>- ulei<br>+<br>ITP</div>
+        </div>
+        <div class=entry>
+            <div class=point>177<span>.700 KM</span></div>
+            <div class=title>2019 <span>August 14</span></div>
+            <div class="title title-mobile"><span>14 August</span> 2019</div>
+            <div class=body><p>- broasca de la portbagaj (5M0827505E)<br><br><br></div>
+        </div>
+        <div class="entry final">
+            <div class=point id=live-mileage>182.000<span>,000 KM</span></div>
+            <div class=title id=live-date><span>19:15:15 August 14</span> 2019</div>
+            <div class=body><p><img alt="De vânzare" src=images/de_vanzare.png><br><br><br></div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="center">
+        <h1>Istoric alimentare și consum</h1>
+        <div id="fixed-table-container" class="fixed-table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>Dată
+                    <th>Motorină
+                    <th>KM
+                    <th>Diferență KM
+                    <th>Litri
+                    <th>Preț Total
+                    <th>Preț L
+                    <th>Consum L/100KM
+                    <th>Consum RON/100KM
+                <tbody>
+                <tr>
+                    <td>Total și medie<br> 
+                    <td>
+                    <td>
+                    <td>22,862.3<br>KM
+                    <td>1,596.97<br>L
+                    <td>9,667.26<br>RON
+                    <td>6.16<br>RON/L
+                    <td class=important>6.26<br>L/100KM
+                    <td class=important>38.54<br>RON/100KM
+                <tr>
+                    <td>20.01.2017
+                    <td>OMV MaxxMotion
+                    <td>139,976
+                    <td>
+                    <td>33.568401
+                    <td>174.22
+                    <td>5.19
+                    <td>
+                    <td>
+                <tr>
+                    <td>06.02.2017
+                    <td>OMV
+                    <td>
+                    <td>
+                    <td>46.520000
+                    <td>244.23
+                    <td>5.25
+                    <td>
+                    <td>
+                <tr>
+                    <td>08.10.2017
+                    <td>Efix S Motorina 55
+                    <td>153,564
+                    <td>624.4
+                    <td>36.509839
+                    <td>204.09
+                    <td>5.59
+                    <td>5.85
+                    <td>32.69
+                <tr>
+                    <td>07.11.2017
+                    <td>Efix S Motorina 55
+                    <td>154,406
+                    <td>824.4
+                    <td>50.490161
+                    <td>282.24
+                    <td>5.59
+                    <td>6.12
+                    <td>34.24
+                <tr>
+                    <td>03.12.2017
+                    <td>Efix S Motorina 55
+                    <td>
+                    <td>
+                    <td>43.130208
+                    <td>248.43
+                    <td>5.76
+                    <td>
+                    <td>
+                <tr>
+                    <td>19.12.2017
+                    <td>Efix S Motorina 55
+                    <td>
+                    <td>
+                    <td>46.430088
+                    <td>262.33
+                    <td>5.65
+                    <td>
+                    <td>
+                <tr>
+                    <td>02.01.2018
+                    <td>Efix S Motorina 55
+                    <td>157,244
+                    <td>845.3
+                    <td>47.260345
+                    <td>274.11
+                    <td>5.80
+                    <td>5.59
+                    <td>32.43
+                <tr>
+                    <td>21.01.2018
+                    <td>Efix S Motorina 55
+                    <td>157,749
+                    <td>503.4
+                    <td>34.479798
+                    <td>204.81
+                    <td>5.94
+                    <td>6.85
+                    <td>40.69
+                <tr>
+                    <td>10.02.2018
+                    <td>Efix S Motorina 55
+                    <td>158,447
+                    <td>697.6
+                    <td>48.830420
+                    <td>279.31
+                    <td>5.72
+                    <td>7.00
+                    <td>40.04
+                <tr>
+                    <td>29.04.2018
+                    <td>Efix S Motorina 55
+                    <td>161,286
+                    <td>600.0
+                    <td>40.679803
+                    <td>247.74
+                    <td>6.09
+                    <td>6.78
+                    <td>41.29
+                <tr>
+                    <td>25.05.2018
+                    <td>Efix S Motorina 55
+                    <td>162,006
+                    <td>720.0
+                    <td>43.710652
+                    <td>274.94
+                    <td>6.29
+                    <td>6.07
+                    <td>38.19
+                <tr>
+                    <td>08.06.2018
+                    <td>Efix S Motorina 55
+                    <td>162,498
+                    <td>489.8
+                    <td>32.200318
+                    <td>202.54
+                    <td>6.29
+                    <td>6.57
+                    <td>41.35
+                <tr>
+                    <td>22.06.2018
+                    <td>Efix S Motorina 55
+                    <td>163,071
+                    <td>573.3
+                    <td>32.800000
+                    <td>205.00
+                    <td>6.25
+                    <td>5.72
+                    <td>35.76
+                <tr>
+                    <td>30.06.2018
+                    <td>Efix S Motorina 55
+                    <td>163,519
+                    <td>448.4
+                    <td>26.240064
+                    <td>165.05
+                    <td>6.29
+                    <td>5.85
+                    <td>36.81
+                <tr>
+                    <td>03.08.2018
+                    <td>Efix S Motorina 55
+                    <td>163,946
+                    <td>426.7
+                    <td>26.789474
+                    <td>167.97
+                    <td>6.27
+                    <td>6.28
+                    <td>39.36
+                <tr>
+                    <td>10.08.2018
+                    <td>Efix S Motorina 55
+                    <td>164,591
+                    <td>645.1
+                    <td>37.298271
+                    <td>233.81
+                    <td>6.27
+                    <td>5.78
+                    <td>36.24
+                <tr>
+                    <td>26.08.2018
+                    <td>Efix S Motorina 55
+                    <td>165,203
+                    <td>611.6
+                    <td>35.540541
+                    <td>223.55
+                    <td>6.29
+                    <td>5.81
+                    <td>36.55
+                <tr>
+                    <td>14.09.2018
+                    <td>Efix S Motorina 55
+                    <td>165,498
+                    <td>295.0
+                    <td>20.139319
+                    <td>130.10
+                    <td>6.46
+                    <td>6.83
+                    <td>44.10
+                <tr>
+                    <td>05.10.2018
+                    <td>Efix S Motorina 55
+                    <td>166,129
+                    <td>630.7
+                    <td>36.619414
+                    <td>237.66
+                    <td>6.49
+                    <td>5.81
+                    <td>37.68
+                <tr>
+                    <td>13.10.2018
+                    <td>Efix S Motorina 55
+                    <td>166,562
+                    <td>433.2
+                    <td>25.010736
+                    <td>163.07
+                    <td>6.52
+                    <td>5.77
+                    <td>37.64
+                <tr>
+                    <td>20.10.2018
+                    <td>Efix S Motorina 55
+                    <td>167,088
+                    <td>525.8
+                    <td>29.000000
+                    <td>189.08
+                    <td>6.52
+                    <td>5.52
+                    <td>35.96
+                <tr>
+                    <td>28.10.2018
+                    <td>Efix S Motorina 55
+                    <td>167,702
+                    <td>614.2
+                    <td>35.799692
+                    <td>232.34
+                    <td>6.49
+                    <td>5.83
+                    <td>37.83
+                <tr>
+                    <td>16.11.2018
+                    <td>Efix S Motorina 55
+                    <td>168,472
+                    <td>769.9
+                    <td>48.199367
+                    <td>304.62
+                    <td>6.32
+                    <td>6.26
+                    <td>39.57
+                <tr>
+                    <td>30.11.2018
+                    <td>Efix S Motorina 55
+                    <td>169,054
+                    <td>581.5
+                    <td>39.260365
+                    <td>236.74
+                    <td>6.03
+                    <td>6.75
+                    <td>40.71
+                <tr>
+                    <td>21.12.2018
+                    <td>Efix S Motorina 55
+                    <td>169,550
+                    <td>496.5
+                    <td>40.040678
+                    <td>236.24
+                    <td>5.90
+                    <td>8.06
+                    <td>47.58
+                <tr>
+                    <td>01.01.2019
+                    <td>Efix S Motorina 55
+                    <td>170,408
+                    <td>857.7
+                    <td>46.900000
+                    <td>272.02
+                    <td>5.80
+                    <td>5.47
+                    <td>31.72
+                <tr>
+                    <td>24.01.2019
+                    <td>Efix S Motorina 55
+                    <td>171,026
+                    <td>618.0
+                    <td>50.919192
+                    <td>302.46
+                    <td>5.94
+                    <td>8.24
+                    <td>48.94
+                <tr>
+                    <td>28.02.2019
+                    <td>Efix S Motorina 55
+                    <td>172,424
+                    <td>560.5
+                    <td>35.829346
+                    <td>224.65
+                    <td>6.27
+                    <td>6.39
+                    <td>40.08
+                <tr>
+                    <td>08.03.2019
+                    <td>Efix S Motorina 55
+                    <td>172,845
+                    <td>420.8
+                    <td>21.330144
+                    <td>133.74
+                    <td>6.27
+                    <td>5.07
+                    <td>31.78
+                <tr>
+                    <td>24.03.2019
+                    <td>Efix S Motorina 55
+                    <td>173,472
+                    <td>626.9
+                    <td>36.600639
+                    <td>229.12
+                    <td>6.26
+                    <td>5.84
+                    <td>36.55
+                <tr>
+                    <td>31.03.2019
+                    <td>Efix S Motorina 55
+                    <td>173,845
+                    <td>372.8
+                    <td>18.980769
+                    <td>118.44
+                    <td>6.24
+                    <td>5.09
+                    <td>31.77
+                <tr>
+                    <td>25.04.2019
+                    <td>Efix S Motorina 55
+                    <td>174,234
+                    <td>389.6
+                    <td>28.659306
+                    <td>181.70
+                    <td>6.34
+                    <td>7.36
+                    <td>46.64
+                <tr>
+                    <td>17.05.2019
+                    <td>Efix S Motorina 55
+                    <td>174,936
+                    <td>702.1
+                    <td>45.289308
+                    <td>288.04
+                    <td>6.36
+                    <td>6.45
+                    <td>41.03
+                <tr>
+                    <td>05.07.2019
+                    <td>Efix S Motorina 55
+                    <td>176,478
+                    <td>767.7
+                    <td>47.059504
+                    <td>284.71
+                    <td>6.05
+                    <td>6.13
+                    <td>37.09
+                <tr>
+                    <td>26.07.2019
+                    <td>Efix S Motorina 55
+                    <td>177,127
+                    <td>648.9
+                    <td>43.040650
+                    <td>264.70
+                    <td>6.15
+                    <td>6.63
+                    <td>40.79
+                <tr>
+                    <td>14.08.2019
+                    <td>Efix S Motorina 55
+                    <td>177,717
+                    <td>590.3
+                    <td>39.469622
+                    <td>240.37
+                    <td>6.09
+                    <td>6.69
+                    <td>40.72
+                <tr>
+                    <td>06.09.2019
+                    <td>Efix S Motorina 55
+                    <td>178,539
+                    <td>821.6
+                    <td>43.899506
+                    <td>266.47
+                    <td>6.07
+                    <td>5.34
+                    <td>32.43
+                <tr>
+                    <td>15.09.2019
+                    <td>Efix S Motorina 55
+                    <td>179,121
+                    <td>581.6
+                    <td>33.209836
+                    <td>202.58
+                    <td>6.10
+                    <td>5.71
+                    <td>34.83
+                <tr>
+                    <td>11.10.2019
+                    <td>Efix S Motorina 55
+                    <td>179,800
+                    <td>679.0
+                    <td>38.259677
+                    <td>237.21
+                    <td>6.20
+                    <td>5.63
+                    <td>34.94
+                <tr>
+                    <td>24.11.2019
+                    <td>Efix S Motorina 55
+                    <td>181,023
+                    <td>472.9
+                    <td>26.319280
+                    <td>161.60
+                    <td>6.14
+                    <td>5.57
+                    <td>34.17
+                <tr>
+                    <td>01.12.2019
+                    <td>Efix S Motorina 55
+                    <td>181,409
+                    <td>385.0
+                    <td>28.339806
+                    <td>175.14
+                    <td>6.18
+                    <td>7.36
+                    <td>45.49
+                <tr>
+                    <td>24.12.2019
+                    <td>Efix S Motorina 55
+                    <td>181,855
+                    <td>446.0
+                    <td>36.449838
+                    <td>225.26
+                    <td>6.18
+                    <td>8.17
+                    <td>50.51
+                <tr>
+                    <td>17.01.2020
+                    <td>Efix S Motorina 55
+                    <td>182,419
+                    <td>564.1
+                    <td>39.869270
+                    <td>234.83
+                    <td>5.89
+                    <td>7.07
+                    <td>41.63
+                <tr>
+                    <td> <br>Total și medie
+                    <td>
+                    <td>
+                    <td>22,862.3<br>KM
+                    <td>1,596.97<br>L
+                    <td>9,667.26<br>RON
+                    <td>6.16<br>RON/L
+                    <td class=important>6.26<br>L/100KM
+                    <td class=important>38.54<br>RON/100KM
+            </table>
+        </div>
+        <br>
+    </div>
+</section>
+<section id="current_state">
+    <div class="center">
+        <h1>Stare actuală</h1>
+        <ul>
+            <li>al treilea proprietar, al doilea în România, de la 137.000 KM, folosită ca mașină personală timp de 3
+                ani, până în data de 08.02.2020
+            </li>
+            <li>stage 1 (140CP, 320Nm) de la 146.500 KM</li>
+            <li>fără nicio eroare sau defect</li>
+            <li>ITP valabil până în 09.06.2021</li>
+            <li>urme de uzură normale pe exterior, ce se pot observa în poze</li>
+            <li>filtru de particule: 53g (oil ash mass) din 70g (ash load limit) (neschimbat sau curățat)</li>
+            <li>Kit distribuție schimbat la 141.500 KM</li>
+            <li>persoană fizică cu toate actele în regulă</li>
+            <li>revizia anuală (filtre, ulei, etc) trebuie efectuată în luna martie 2020</li>
+            <li>se vinde cu absolut tot ce se vede în poze și cu tot ce e necesar pentru o mașină gata de drum:
+                <ul>
+                    <li>jante aliaj 16" cu cauciucuri de vară</li>
+                    <li>jante 15" cu cauciucuri de iarnă</li>
+                    <li>cameră video Vico Vation 2 + card memorie 64GB Class 10</li>
+                    <li>încărcător USB Quick Charge de calitate (camera funcționează încontinuu de ani de zile +
+                        încărcare rapidă la telefon)
+                    </li>
+                    <li>unitate media originală cu navigație - RNS 310 - 3C0 035 270 B</li>
+                    <li>unitate media nouă RCD 330 cu Bluetooth și App-Connect: Android Auto, Apple Carplay și
+                        Mirrorlink (poate rula Waze, Google Maps etc de pe telefon)
+                    </li>
+                    <li><a target="_blank" href="https://www.rompetrol.ro/personal/fill-go/fill-go-credit"
+                           title="Card Rompetrol Fill&Go">card Rompetrol Fill&Go prealimentat</a></li>
+                    <li>covorașe OE Golf</li>
+                    <li>preșuri OE Golf</li>
+                    <li>trusă medicală, extinctor, triunghiuri, roată de rezervă, compresor auto etc</li>
+                </ul>
+            </li>
+            <li>consum mediu combinat pentru 22,862 KM: 6.26 L/100KM (calculat pe termen lung de 2-3 ani la pompă)</li>
+            <li>consum urban: 7-8 L/100KM</li>
+            <li>consum extra-urban: 5-6 L/100KM</li>
+            <li>raport AutoDNA de la momentul cumpărării de la vechiul proprietar:
+                <a href="images/raport_autodna_WVWZZZ1KZCW076256.pdf" target="_blank" title="AutoDNA">aici</a>
+            </li>
+            <li>accept orice verificare</li>
+            <li>dețin tester VCDS (original) și OBDEleven pentru mai multe date despre mașină la fața locului</li>
+            <li>o vând pentru că am trecut la Golf 7</li>
+            <li>album ce cuprinde istoric, consum, dotări, reparații, stare actuală: <a
+                    href='https://photos.app.goo.gl/DnZCXGKr2MWL1CmaA' title='Album' target="_blank">click aici</a></li>
+        </ul>
+    </div>
+</section>
+<section id="price">
+    <div class="center">
+        <h1>Preț</h1>
+        <div class="price">
+            0 euro
+        </div>
+        <a id="negotiate" href="#">
+            Negociază
+        </a>
+    </div>
+</section>
+<section id="contact">
+    <div class="center">
+        <h1>Contact</h1>
+        <a href="tel:0371ABCDEF" title="Sună la 0371 ABC DEF" target="_blank">0371 ABC DEF</a>
+        <a href="https://www.autovit.ro/anunt/volkswagen-golf-vi-ID7GABVU.html" target="_blank" title="Autovit"></a>
+        <a href="https://www.olx.ro/oferta/volkswagen-golf-raspund-rapid-la-mesaje-mai-multe-detalii-pe-golf6devanzare-ro-IDdl6dQ.html"
+           title="OLX" target="_blank"></a>
+        <a href="mailto:golf6devanzare@gmail.com?Subject=Salut, sunt interesat de Golf 6"
+           title="Email golf6devanzare@gmail.com" target="_blank">golf6devanzare@gmail.com</a>
+    </div>
+</section>
+</body>
+</html>

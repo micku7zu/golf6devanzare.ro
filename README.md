@@ -1,2 +1,2 @@
 # golf6devanzare.ro
-Site for personal car selling
+Site for my personal car selling 
