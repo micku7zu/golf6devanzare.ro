@@ -1,2 +1,1 @@
-# golf6devanzare.ro
-Site for my personal car selling 
+This branch contains the minified public version obtained by manually minimizing the CSS and JS files from the [main branch](https://github.com/micku7zu/golf6devanzare.ro)
