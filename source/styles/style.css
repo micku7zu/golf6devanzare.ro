@@ -1085,7 +1085,7 @@ td.important {
     opacity: 0.7;
     background-color: rgba(0, 0, 0, 0.65);
     pointer-events: none;
-    z-index:9999;
+    z-index: 9999;
 }
 
 #watermark span {
@@ -1098,4 +1098,54 @@ td.important {
     font-size: min(25vh, 20vw);
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+#opensource {
+    margin: 15px 0;
+    text-align: center;
+}
+
+#opensource .btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: bottom;
+    font-weight: 600;
+    color: #24292e;
+    background-color: #eff3f6;
+    border: 1px solid;
+    border-color: #c5c9cc;
+    border-color: rgba(27, 31, 35, .2);
+    background-image: -moz-linear-gradient(top, #fafbfc, #eff3f6 90%);
+    background-image: linear-gradient(180deg, #fafbfc, #eff3f6 90%);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFFAFBFC', endColorstr='#FFEEF2F5');
+    height: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 23px;
+    border-radius: .25em;
+    user-select: none;
+    background-repeat: repeat-x;
+    background-position: -1px -1px;
+    background-size: 110% 110%;
+    text-align: left;
+    white-space: nowrap;
+    text-decoration: none;
+    outline: 0;
+}
+
+#opensource .btn:hover {
+    background-color: #e9ecef;
+    border-color: #a1a4a8;
+    border-color: rgba(27, 31, 35, .35);
+    box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 35, .15);
+    background-image: none;
+    filter: none;
+}
+
+#opensource .btn svg {
+    display: inline-block;
+    vertical-align: text-top;
+    fill: currentColor;
+    margin-right: 5px;
 }
