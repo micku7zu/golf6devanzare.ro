@@ -1047,6 +1047,10 @@ td.important {
         line-height: 74vw;
     }
 
+    #contact a:last-child {
+        padding-bottom: 60px;
+    }
+
     #current_state ul {
         line-height: 2.3rem;
     }
