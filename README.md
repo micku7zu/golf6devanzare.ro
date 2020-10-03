@@ -27,7 +27,7 @@ This repo contains the final unminified version of the website:
 - CSS: no bootstrap, not optimized, not high quality code
 - JavaScript: no frameworks, no documentation, no code standards
 - Images and statistics of my own personal car
-- The minified public version available on [minified branch](https://github.com/micku7zu/golf6devanzare.ro/tree/minified) and obtained by manually minimizing the CSS and JS files.
+- The minified public version, obtained by manually minimizing the CSS and JS files, is available on the [minified branch](https://github.com/micku7zu/golf6devanzare.ro/tree/minified)
 
 ---
 
