@@ -1,6 +1,6 @@
 ## Personalized car selling website for my VW Golf VI
 Available only in Romanian language, but you can use Google Translate to give you an idea of what it's all about:
-# [https://golf6devanzare.ro](https://golf6devanzare.ro/notsold.html) 
+# [https://golf6devanzare.ro](https://micku7zu.github.io/golf6devanzare.ro/notsold.html) 
 
 ---
 
