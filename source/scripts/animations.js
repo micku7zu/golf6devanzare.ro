@@ -62,7 +62,7 @@ var animations = (function () {
 
             anime({
                 targets: price,
-                price: 6699,
+                price: 3699,
                 //easing: 'cubicBezier(.5, .05, .1, .3)',
                 easing: 'cubicBezier(.5,.05,.26,1.5)',
                 duration: 6500,
@@ -134,7 +134,7 @@ var animations = (function () {
 
                 anime({
                     targets: price,
-                    price: 6490,
+                    price: 3490,
                     easing: 'cubicBezier(.5, .05, .26, 2.2)',
                     duration: 6500,
                     delay: 0,
